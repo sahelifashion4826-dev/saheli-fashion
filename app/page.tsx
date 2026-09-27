@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { siteConfig } from '@/config/site'
 import CategoryGrid from '@/components/CategoryGrid'
 import { NavratriOffer } from '@/components/NavratriOffer'
+import { WelcomeOfferModal } from '@/components/WelcomeOfferModal'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { FallbackImage } from '@/components/ui/FallbackImage'
 
@@ -10,6 +11,7 @@ import { FallbackImage } from '@/components/ui/FallbackImage'
 export default function HomePage() {
   return (
     <div className="flex flex-col gap-16 pb-16 md:gap-24">
+      <WelcomeOfferModal />
       <section className="fade-up-section relative isolate min-h-[72svh] w-full overflow-hidden bg-[#180d0a] text-[#fdf8ee] md:min-h-[calc(100svh-9rem)]">
         <Image
           src="/images/hero-bg.jpg"
