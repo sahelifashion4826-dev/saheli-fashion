@@ -14,10 +14,11 @@ export function NavratriOffer() {
         aria-label="Saheli Fashion Navratri Special Garba Offer Banner"
       >
         <Image
-          src="/images/navratri-offer-banner.jpg"
+          src="/images/navratrioffer500.png"
           alt="Saheli Fashion Navratri Special Garba Offer Banner"
-          width={1600}
-          height={700}
+          width={483}
+          height={689}
+          sizes="(max-width: 768px) calc(100vw - 2rem), (max-width: 1216px) calc(100vw - 4rem), 1152px"
           className="h-auto w-full rounded-xl border border-[#D4AF37]/30 shadow-lg transition-all duration-300 hover:shadow-2xl"
         />
       </a>

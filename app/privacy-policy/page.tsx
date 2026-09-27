@@ -1,4 +1,12 @@
 import { PolicyLayout } from '@/components/layout/PolicyLayout'
+import { createPageMetadata } from '@/config/metadata'
+
+export const metadata = createPageMetadata({
+  title: 'Privacy Policy',
+  description:
+    'Read how Saheli Fashion handles personal details shared for styling consultations, order enquiries and delivery coordination.',
+  path: '/privacy-policy',
+})
 
 export default function PrivacyPolicyPage() {
   return (

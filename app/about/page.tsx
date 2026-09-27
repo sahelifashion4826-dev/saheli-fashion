@@ -1,6 +1,14 @@
 ﻿import { Heart, Scissors, Sparkles } from 'lucide-react'
 import FoundersSection from '@/components/FoundersSection'
 import { siteConfig } from '@/config/site'
+import { createPageMetadata } from '@/config/metadata'
+
+export const metadata = createPageMetadata({
+  title: 'About the Ahmedabad Designer Boutique',
+  description:
+    'Meet Saheli Fashion founders Heena Ghelani and Nisha Devani, and discover their Ahmedabad boutique for bespoke sarees, lehengas and Gujarati couture.',
+  path: '/about',
+})
 
 const valueCards = [
   {

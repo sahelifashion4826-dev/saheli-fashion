@@ -1,6 +1,14 @@
 import CategoryGrid from '@/components/CategoryGrid'
 import { ProductCatalog } from '@/components/products/ProductCatalog'
 import { products } from '@/data/products'
+import { createPageMetadata } from '@/config/metadata'
+
+export const metadata = createPageMetadata({
+  title: 'Shop Ethnic Wear by Category',
+  description:
+    'Explore sarees, lehengas, suits and designer ethnic wear by category, fabric, color and price at Saheli Fashion in Ahmedabad.',
+  path: '/filter',
+})
 
 export default function FilterPage() {
   return (

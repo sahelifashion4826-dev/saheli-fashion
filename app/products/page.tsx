@@ -1,4 +1,12 @@
 import CategoryGrid from '@/components/CategoryGrid'
+import { createPageMetadata } from '@/config/metadata'
+
+export const metadata = createPageMetadata({
+  title: 'Designer Ethnic Wear Collection | Sarees & Lehengas',
+  description:
+    'Browse Saheli Fashion’s collection of designer sarees, bridal lehengas, kurties, suits and festive ethnic wear, curated in Ahmedabad.',
+  path: '/products',
+})
 
 export default function ProductsPage() {
   return (

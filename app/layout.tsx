@@ -27,11 +27,11 @@ const gujarati = Noto_Sans_Gujarati({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: 'Saheli Fashion | Heritage Designer Boutique in Ahmedabad',
+    default: 'Designer Sarees, Lehengas & Ethnic Wear in Ahmedabad | Saheli Fashion',
     template: `%s | ${siteConfig.name}`,
   },
   description:
-    'Discover exquisite bespoke sarees, lehengas, kurtis, and traditional Gujarati ethnic wear by Heena Ghelani & Nisha Devani in Ahmedabad.',
+    'Shop designer sarees, bridal lehengas, kurtis and Gujarati ethnic wear at Saheli Fashion, Ahmedabad. Explore bespoke styling and festive Navratri collections.',
   keywords: [
     'Saheli Fashion',
     'Ahmedabad boutique',
@@ -40,31 +40,31 @@ export const metadata: Metadata = {
     'bespoke lehengas',
     'kurtis',
     'co-ord sets',
+    'Navratri special outfits',
+    'festive ethnic wear Ahmedabad',
   ],
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
   openGraph: {
     type: 'website',
-    locale: 'en_US',
-    url: siteConfig.url,
-    title: 'Saheli Fashion | Heritage Designer Boutique in Ahmedabad',
+    locale: 'en_IN',
+    url: `${siteConfig.url}/`,
+    title: 'Designer Sarees, Lehengas & Ethnic Wear in Ahmedabad | Saheli Fashion',
     description:
-      'Discover exquisite bespoke sarees, lehengas, kurtis, and traditional Gujarati ethnic wear by Heena Ghelani & Nisha Devani in Ahmedabad.',
+      'Shop designer sarees, bridal lehengas, kurtis and Gujarati ethnic wear at Saheli Fashion, Ahmedabad. Explore bespoke styling and festive Navratri collections.',
     siteName: siteConfig.name,
     images: [
       {
         url: siteConfig.ogImage,
-        width: 1200,
-        height: 630,
         alt: 'Saheli Fashion heritage designer boutique in Ahmedabad',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Saheli Fashion | Heritage Designer Boutique in Ahmedabad',
+    title: 'Designer Sarees, Lehengas & Ethnic Wear in Ahmedabad | Saheli Fashion',
     description:
-      'Discover exquisite bespoke sarees, lehengas, kurtis, and traditional Gujarati ethnic wear by Heena Ghelani & Nisha Devani in Ahmedabad.',
+      'Shop designer sarees, bridal lehengas, kurtis and Gujarati ethnic wear at Saheli Fashion, Ahmedabad. Explore bespoke styling and festive Navratri collections.',
     images: [siteConfig.ogImage],
   },
   robots: {
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: siteConfig.url,
+    canonical: `${siteConfig.url}/`,
   },
 }
 

@@ -1,4 +1,12 @@
 import { PolicyLayout } from '@/components/layout/PolicyLayout'
+import { createPageMetadata } from '@/config/metadata'
+
+export const metadata = createPageMetadata({
+  title: 'Terms of Service',
+  description:
+    'Review the terms for using the Saheli Fashion online catalogue, including garment representation, custom orders and content use.',
+  path: '/terms',
+})
 
 export default function TermsPage() {
   return (

@@ -4,6 +4,7 @@ import { products } from '@/data/products'
 import { ProductGrid } from '@/components/products/ProductGrid'
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 import { FallbackImage } from '@/components/ui/FallbackImage'
+import { createPageMetadata } from '@/config/metadata'
 
 interface CategoryPageProps {
   params: Promise<{
@@ -15,6 +16,21 @@ export async function generateStaticParams() {
   return categories.map((category) => ({
     slug: category.slug,
   }))
+}
+
+export async function generateMetadata({ params }: CategoryPageProps) {
+  const { slug } = await params
+  const category = categories.find((item) => item.slug === slug)
+
+  if (!category) notFound()
+
+  return createPageMetadata({
+    title: `${category.name} | Designer Ethnic Wear in Ahmedabad`,
+    description: `${category.description} Discover designer ${category.name.toLowerCase()} at Saheli Fashion, Ahmedabad.`,
+    path: `/categories/${category.slug}`,
+    image: category.bannerImage,
+    imageAlt: `${category.name} collection at Saheli Fashion`,
+  })
 }
 
 export default async function CategorySlugPage({ params }: CategoryPageProps) {

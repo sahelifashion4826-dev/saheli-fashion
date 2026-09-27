@@ -5,7 +5,7 @@ export const siteConfig = {
   logoText: 'સહેલી | SAHELI',
   tagline: 'સાથે મળીને | Together & Empowered',
   description: 'Curated luxury Indian ethnic wear, sarees, lehengas, and bespoke couture.',
-  url: 'https://www.sahelifashion.com',
+  url: 'https://www.sahelifashion.co.in',
   phone: '+91 8469484356',
   whatsappNumber: '918469484356',
   email: 'Sahelifashion4826@gmail.com',

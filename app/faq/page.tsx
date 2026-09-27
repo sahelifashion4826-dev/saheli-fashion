@@ -1,5 +1,13 @@
 import { PolicyLayout } from '@/components/layout/PolicyLayout'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
+import { createPageMetadata } from '@/config/metadata'
+
+export const metadata = createPageMetadata({
+  title: 'FAQs | Orders, Custom Stitching & Shipping',
+  description:
+    'Find answers about Saheli Fashion’s designer collections, WhatsApp enquiries, custom fitting, orders and delivery.',
+  path: '/faq',
+})
 
 export default function FAQPage() {
   return (

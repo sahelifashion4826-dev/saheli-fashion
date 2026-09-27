@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^sahelifashion\.co\.in$ [NC]
+RewriteRule ^ https://www.sahelifashion.co.in%{REQUEST_URI} [R=301,L,NE]

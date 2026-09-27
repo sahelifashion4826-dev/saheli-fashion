@@ -7,6 +7,7 @@ import { ImageGallery } from '@/components/products/ImageGallery'
 import { ProductGrid } from '@/components/products/ProductGrid'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { Sparkles, ShieldCheck, Globe, Share2 } from 'lucide-react'
+import { createPageMetadata } from '@/config/metadata'
 
 interface ProductPageProps {
   params: Promise<{
@@ -18,6 +19,23 @@ export async function generateStaticParams() {
   return products.map((product) => ({
     slug: product.slug,
   }))
+}
+
+export async function generateMetadata({ params }: ProductPageProps) {
+  const { slug } = await params
+  const product = products.find((item) => item.slug === slug)
+
+  if (!product) notFound()
+
+  const category = categories.find((item) => item.id === product.categoryId)
+
+  return createPageMetadata({
+    title: `${product.title} | Designer Ethnic Wear in Ahmedabad`,
+    description: `${product.description} Enquire about this ${category?.name.toLowerCase() ?? 'ethnic wear design'} at Saheli Fashion, Ahmedabad.`,
+    path: `/products/${product.slug}`,
+    image: product.images[0],
+    imageAlt: `${product.title} by Saheli Fashion`,
+  })
 }
 
 export default async function ProductSlugPage({ params }: ProductPageProps) {

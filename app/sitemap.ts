@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     '',
     '/products',
+    '/filter',
     '/about',
     '/contact',
     '/faq',
@@ -16,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/privacy-policy',
     '/terms',
   ].map((route) => ({
-    url: `${baseUrl}${route}`,
+    url: route ? `${baseUrl}${route}` : `${baseUrl}/`,
     lastModified: new Date(),
     changeFrequency: 'weekly',
     priority: route === '' ? 1.0 : 0.8,

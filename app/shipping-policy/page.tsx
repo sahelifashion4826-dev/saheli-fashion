@@ -1,4 +1,12 @@
 import { PolicyLayout } from '@/components/layout/PolicyLayout'
+import { createPageMetadata } from '@/config/metadata'
+
+export const metadata = createPageMetadata({
+  title: 'Shipping & Delivery Policy',
+  description:
+    'Learn about Saheli Fashion order processing, custom garment timelines, domestic and international shipping, and delivery tracking.',
+  path: '/shipping-policy',
+})
 
 export default function ShippingPolicyPage() {
   return (
