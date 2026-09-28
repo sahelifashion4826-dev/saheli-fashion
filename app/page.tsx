@@ -229,38 +229,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="fade-up-section mx-auto max-w-6xl px-4 py-16">
-        <div className="flex flex-col items-center gap-8 rounded-2xl border border-[#D4AF37]/40 bg-[#3A2D27] p-8 shadow-[0_18px_45px_rgba(58,45,39,0.35)] md:flex-row md:gap-12 md:p-12">
-          <div className="w-full text-left md:w-1/2">
-            <span className="mb-4 block text-xs font-semibold uppercase tracking-[0.28em] text-[#D4AF37] sm:text-sm">
-              BESPOKE STYLING SERVICE
-            </span>
-            <h2 className="mb-4 max-w-xl font-serif text-3xl font-bold leading-tight text-[#FFFFFF] sm:text-4xl md:text-5xl">
-              Looking for Custom Color Options or Bridal Enquiries?
-            </h2>
-            <p className="mb-8 max-w-xl text-base leading-relaxed text-[#F5F0E8]/90 sm:text-lg">
-              Connect directly with our fashion consultants via WhatsApp for fabric video tours, customized size consultations, and worldwide shipping details.
-            </p>
-            <WhatsAppButton
-              message="Namaste! I would like to initiate a personal styling and custom enquiry session."
-              label="Start Instant WhatsApp Chat"
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_10px_25px_rgba(37,211,102,0.28)] transition-colors duration-200 hover:bg-[#1dbb5a] focus:outline-none focus:ring-2 focus:ring-[#F5D77F] focus:ring-offset-2 focus:ring-offset-[#3A2D27] sm:px-8 sm:text-base"
-            />
-          </div>
-
-          <div className="w-full md:w-1/2">
-            <div className="overflow-hidden rounded-xl border border-[#D4AF37]/40 bg-[#F5EFE7] p-2 shadow-2xl">
-              <Image
-                src="/images/bespoke-bridal-model.jpg"
-                alt="Bridal styling consultation with Saheli Fashion"
-                width={900}
-                height={1200}
-                className="h-auto w-full rounded-xl object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }
