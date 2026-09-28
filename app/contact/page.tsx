@@ -22,42 +22,16 @@ export default function ContactPage() {
   return (
     <div className="bg-[#FAF6F0] pb-16 text-[#3A2D27]">
       <section className="mx-auto max-w-7xl px-4 py-12 md:py-16">
-        <div className="grid items-center gap-6 lg:grid-cols-[1fr_1.5fr_1fr]">
-          <div className="rounded-[32px] border border-[#D4AF37]/35 bg-[#FFFDF9] p-4 shadow-[0_18px_45px_rgba(58,45,39,0.08)]">
-            <div className="overflow-hidden rounded-[28px] border border-[#D4AF37]/40 bg-[#FAF6F0]">
-              <Image
-                src="/images/namaste-left.png"
-                alt="Model in maroon ethnic wear greeting with Namaste"
-                width={900}
-                height={900}
-                className="h-[360px] w-full object-contain object-center md:h-[420px]"
-              />
-            </div>
-          </div>
-
-          <div className="text-center">
-            <span className="mb-4 inline-flex items-center rounded-full border border-[#D4AF37]/45 bg-[#F7E7B8] px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.26em] text-[#7A5B1D] shadow-sm">
-              સંપર્ક કરો | CONNECT WITH SAHELI
-            </span>
-            <h1 className="font-serif text-3xl text-[#3A2D27] md:text-5xl">
-              પધારો! Step Into Our World of Ethnic Couture
-            </h1>
-            <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-[#4B4B4B] md:text-lg">
-              Whether you need personal styling, bridal consultation, or custom fitting, Heena and Nisha welcome you to our studio.
-            </p>
-          </div>
-
-          <div className="rounded-[32px] border border-[#D4AF37]/35 bg-[#FFFDF9] p-4 shadow-[0_18px_45px_rgba(58,45,39,0.08)]">
-            <div className="overflow-hidden rounded-[28px] border border-[#D4AF37]/40 bg-[#FAF6F0]">
-              <Image
-                src="/images/namaste-right.png"
-                alt="Model in blue and gold ethnic wear greeting with Namaste"
-                width={900}
-                height={900}
-                className="h-[360px] w-full object-contain object-center md:h-[420px]"
-              />
-            </div>
-          </div>
+        <div className="mx-auto w-full overflow-hidden rounded-2xl border border-[#D4AF37]/35 shadow-[0_24px_60px_rgba(58,45,39,0.16)]">
+          <Image
+            src="/images/welcome.png"
+            alt="Step Into Our World of Ethnic Couture"
+            width={949}
+            height={537}
+            priority
+            sizes="(max-width: 1280px) 100vw, 1280px"
+            className="h-auto w-full object-cover"
+          />
         </div>
       </section>
 
@@ -108,6 +82,21 @@ export default function ContactPage() {
               >
                 <MapPinned className="h-5 w-5" />
                 Get Directions on Google Maps | રસ્તો જુઓ
+              </a>
+            </div>
+
+            <div className="mt-8 border-t border-[#D4AF37]/35 pt-6 text-center">
+              <h3 className="font-serif text-xl text-[#3A2D27]">Find Us on Google</h3>
+              <p className="mt-2 text-sm leading-relaxed text-[#4B4B4B]">
+                Visit our Google Business Profile to get directions, check operating hours, and read customer reviews.
+              </p>
+              <a
+                href="https://share.google/ZW7zIT2uB3GYSd51c"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex min-h-11 items-center justify-center rounded-xl bg-[#1A73E8] px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#1558B0]"
+              >
+                View Saheli Fashion on Google
               </a>
             </div>
           </div>

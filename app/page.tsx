@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { siteConfig } from '@/config/site'
 import CategoryGrid from '@/components/CategoryGrid'
-import { NavratriOffer } from '@/components/NavratriOffer'
 import { WelcomeOfferModal } from '@/components/WelcomeOfferModal'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { FallbackImage } from '@/components/ui/FallbackImage'
@@ -52,8 +51,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      <NavratriOffer />
 
       <section className="fade-up-section container mx-auto px-4">
         <div className="mx-auto mb-10 max-w-3xl text-center">
